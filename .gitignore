@@ -1,0 +1,69 @@
+# Sensitive configuration files
+*.env
+!*.env.example
+**/vaultwarden.env
+**/traefik.env
+**/.env
+
+# SSL certificates and keys
+acme.json
+*.crt
+*.key
+*.pem
+
+# Backup files
+*.backup
+*.bak
+*-backup-*
+backups/
+*.sqlite3
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+.directory
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Docker volumes
+volumes/
+
+# Sensitive data
+**/sensitive/
+**/private/
+credentials.txt
+CREDENTIALS.txt
+*-token.txt
+*.token
+
+# IP addresses and domain-specific configs
+# (Use .example files instead)
+docker-compose.yml
+!docker-compose.yml.example
+
+# Traefik dashboard credentials
+users.txt
+htpasswd
+
+# Database files
+*.db
+*.sqlite
+*.sql
+
+# Archive files
+*.tar.gz
+*.zip
+*.rar
